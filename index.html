@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey Together</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="heart-loader"></div>
+        <p>Loading our story...</p>
+    </div>
+
+    <!-- Countdown Only Section - Shown before anniversary date -->
+    <div id="countdown-only">
+        <header>
+            <h1>Our Journey Together</h1>
+            <div class="countdown" id="anniversary-countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+            <p class="subtitle">Until our anniversary</p>
+            
+            <div class="password-section">
+                <p class="password-info">This special surprise will be unlocked on our anniversary.</p>
+                <form id="password-form" class="password-form">
+                    <input type="password" id="password-input" placeholder="Enter password to unlock early..." required>
+                    <button type="submit" class="btn">Unlock</button>
+                </form>
+                <p id="password-error" class="password-error">Incorrect password. Try again!</p>
+            </div>
+        </header>
+        
+        <footer>
+            <p>Made with <i class="fas fa-heart"></i> for our anniversary - <span id="current-year"></span></p>
+        </footer>
+    </div>
+
+    <!-- Full Content Section - Hidden until anniversary date or unlocked with password -->
+    <div id="full-content">
+        <header>
+            <h1>Our Journey Together</h1>
+            <div class="countdown" id="anniversary-countdown-full">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+            <p class="subtitle">Until our anniversary</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#timeline">Our Timeline</a></li>
+                <li><a href="#memories">Memories</a></li>
+                <li><a href="#future">Our Future</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h2>Happy Anniversary, <span class="partner-name">Diva</span>!</h2>
+                    <p>This website is a collection of my beautiful moments with you.</p>
+                    <a href="#timeline" class="btn">Explore Our Journey</a>
+                </div>
+            </section>
+
+            <section id="timeline" class="timeline-section">
+                <h2>Our Timeline</h2>
+                <div class="timeline">
+                    <!-- Timeline items will be generated from JavaScript -->
+                </div>
+            </section>
+
+            <section id="memories" class="memories-section">
+                <h2>My Favorite Memories With You</h2>
+                <div class="memory-gallery">
+                    <!-- Memory items will be added here -->
+                </div>
+            </section>
+
+            <section id="future" class="future-section">
+                <h2>Our Future Together</h2>
+                <div class="future-content">
+                    <p class="future-intro">Our bucket list for the future:</p>
+                    <ul class="todo-list">
+                        <li class="todo-item">
+                            <div class="todo-checkbox"></div>
+                            <span class="todo-text">Travel somewhere out of town together</span>
+                        </li>
+                        <li class="todo-item">
+                            <div class="todo-checkbox"></div>
+                            <span class="todo-text">Learn to cook a new cuisine</span>
+                        </li>
+                        <li class="todo-item">
+                            <div class="todo-checkbox"></div>
+                            <span class="todo-text">Adopt a cat</span>
+                        </li>
+                        <li class="todo-item">
+                            <div class="todo-checkbox"></div>
+                            <span class="todo-text">Move in together</span>
+                        </li>
+                        <li class="todo-item">
+                            <div class="todo-checkbox"></div>
+                            <span class="todo-text">Start a garden together</span>
+                        </li>
+                    </ul>
+                    <div class="add-todo-container">
+                        <input type="text" id="new-todo-input" placeholder="Add a new goal...">
+                        <button id="add-todo-btn">Add</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with <i class="fas fa-heart"></i> for our anniversary - <span id="current-year"></span></p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
